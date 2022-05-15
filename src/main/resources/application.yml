@@ -1,0 +1,21 @@
+spring:
+  config:
+    activate:
+      on-profile:
+        - default
+        - local
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_practice?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: smith1380!
+
+server:
+  port: 8080
